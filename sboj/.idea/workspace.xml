@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sboj:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57fba759-eeec-4cd8-8ae9-8a63ce652c3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/config/ApplicationBeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/entities/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/entities/JobApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/entities/SectorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/models/binding/JobCreateBindingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/models/binding/UserLoginBindingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/models/binding/UserRegisterBindingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/models/service/JobApplicationServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/models/service/UserServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/domain/models/view/JobViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/repository/JobApplicationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/repository/JobApplicationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/JobApplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/JobApplicationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/BaseBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/DeleteBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/DetailsBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/JobCreateBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/JobsListBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/LoginBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/LogoutBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/beans/RegisterBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/add-job.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/delete-job.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/home.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/job-details.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/login.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/register.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/templates/footer.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/templates/guest-navbar.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/templates/head.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/templates/user-navbar.xhtml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sboj-unit/Hibernate" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sboj-unit/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sboj-unit/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="geography: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sboj-unit/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="geography: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sboj-unit/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sboj_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="jsf" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/config/ApplicationBeanConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/entities/SectorType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/entities/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/entities/JobApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/repository/JobApplicationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/repository/UserRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/models/service/JobApplicationServiceModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/JobApplicationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/service/JobApplicationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/models/service/UserServiceModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/reset-css.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/templates/footer.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/templates/head.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/test.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/templates/guest-navbar.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/index.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/register.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/BaseBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/models/binding/UserRegisterBindingModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/RegisterBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/register.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/models/binding/UserLoginBindingModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/home.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/login.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/add-job.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/models/binding/JobCreateBindingModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/JobCreateBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/add-job.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/LogoutBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/templates/user-navbar.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/domain/models/view/JobViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/JobsListBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/home.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/job-details.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/DetailsBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/LoginBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/job-details.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/delete-job.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/delete-job.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/web/beans/DeleteBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/repository/JobApplicationRepositoryImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="774" />
+    <option name="width" value="1153" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sbojgb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sboj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sbojgb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sboj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sbojgb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sboj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sbojgb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sboj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sbojgb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sboj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sbojgb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sboj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/sboj-solution/SoftUni-Java-Web-master/Workshop" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SoftUni\JavaWebBasics\Projects\11-Workshop\sboj\sboj\src\main\webapp\resources" />
+      <recent name="D:\SoftUni\JavaWebBasics\Projects\11-Workshop\sboj\sboj\src\main\webapp\views" />
+      <recent name="D:\SoftUni\JavaWebBasics\Projects\11-Workshop\sboj\sboj\src\main\webapp\views\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TomEE 9.0.22" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.22" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="sboj:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_sbojgb" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2655" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="sboj:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57fba759-eeec-4cd8-8ae9-8a63ce652c3f" name="Default Changelist" comment="" />
+      <created>1572171081659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572171081659</updated>
+      <workItem from="1572171082840" duration="4946000" />
+      <workItem from="1572334580563" duration="9477000" />
+      <workItem from="1572349957901" duration="4562000" />
+      <workItem from="1572424280958" duration="9109000" />
+      <workItem from="1572509757968" duration="22775000" />
+      <workItem from="1572598549974" duration="2190000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="53059000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Persistence" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44853738" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.2510661" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="CDI" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/web/beans/DeleteBean.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/models/service/UserServiceModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/config/ApplicationBeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/reset-css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/test.xhtml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/templates/footer.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/templates/head.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/register.html" />
+    <entry file="das://a5c6689e-b89c-4759-aa1b-5aac82554680/schema/geography/table/continents">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0f81d6f1-9da3-457e-b547-4d7c8507067f">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a5c6689e-b89c-4759-aa1b-5aac82554680/schema/geography/table/countries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0f81d6f1-9da3-457e-b547-4d7c8507067f">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/entities/JobApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/home.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/repository/UserRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#76#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/add-job.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/models/binding/UserLoginBindingModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/models/binding/JobCreateBindingModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/models/binding/UserRegisterBindingModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/RegisterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/job-details.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/LoginBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/entities/SectorType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/delete-job.html" />
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0-sources.jar!/javax/servlet/ServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="220" column="18" selection-start-line="220" selection-start-column="18" selection-end-line="220" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/models/view/JobViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/JobApplicationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/models/service/JobApplicationServiceModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/service/JobApplicationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/repository/JobApplicationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/job-details.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="107" lean-forward="true" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/register.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="37" column="123" selection-start-line="37" selection-start-column="123" selection-end-line="37" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/add-job.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="40" column="120" selection-start-line="40" selection-start-column="120" selection-end-line="40" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/DetailsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/templates/guest-navbar.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/LogoutBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/JobCreateBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/templates/user-navbar.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/BaseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/JobsListBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/domain/entities/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/web/beans/DeleteBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/repository/JobApplicationRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#0#30#1" expanded="true" />
+            <element signature="e#0#47#1" expanded="true" />
+            <element signature="e#0#45#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/delete-job.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

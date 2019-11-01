@@ -37,6 +37,7 @@
                     </div>
                     <h:inputTextarea rows="4" class="form-control" id="description" name="description" value="#{detailsBean.getJobById(request.getParameter('id')).description}" />
                 </div>
+                <input type="hidden" value="${deleteBean.getJobById(request.getParameter('id')).id}" name="id"/>
                 <div class="button-holder d-flex justify-content-center">
                     <h:commandButton class="btn btn-danger text-white" value="Delete Job" action="#{deleteBean.delete}" />
                 </div>

@@ -4,15 +4,14 @@ import app.domain.models.view.JobViewModel;
 import app.service.JobApplicationService;
 import org.modelmapper.ModelMapper;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 
 @Named
-@RequestScoped
+@ApplicationScoped
 public class DeleteBean extends BaseBean {
 
 	private JobApplicationService jobApplicationService;
@@ -25,11 +24,6 @@ public class DeleteBean extends BaseBean {
 	public DeleteBean(JobApplicationService jobApplicationService, ModelMapper modelMapper) {
 		this.jobApplicationService = jobApplicationService;
 		this.modelMapper = modelMapper;
-	}
-
-	@PostConstruct
-	public void init() {
-		int b = 5;
 	}
 
 	public JobViewModel getJobById(String id) {
